@@ -24,20 +24,22 @@ Os dados utilizados para análise estão contidos em um arquivo Excel chamado `r
 | **Mês**                             | Mês da venda                                                        |
 | **Ano**                             | Ano da venda                                                        |
 
-## Pré-requisitos
+## Funcionalidades
 
-Certifique-se de ter o Python e as bibliotecas necessárias instaladas. Você pode instalar as bibliotecas requeridas usando:
+- **Tratamento de Dados**: As colunas são padronizadas para facilitar a análise, removendo espaços e convertendo para letras minúsculas.
+- **Análise por Segmento**: Os dados são agrupados por segmento, calculando o desconto total, custo total, lucro e margem de lucro.
+- **Análise por Produto**: Os dados são agrupados por produto, com as mesmas métricas calculadas.
+- **Análise por País**: Os dados são agrupados por país, apresentando também as métricas de desempenho.
 
-```bash
-pip install pandas pandas
-```
-# Como Executar o Projeto
+## Resultados
 
-Siga as etapas abaixo para executar o projeto:
+Os resultados da análise são apresentados em DataFrames para cada agrupamento, onde as métricas calculadas são visualizadas de forma clara.
 
-## 1. Clone ou Baixe o Repositório
+## Exemplo de Saída
 
-```bash
-
-```
+```plaintext
+segmento        desconto    custo_total    lucro    margem_lucro
+Governo        3898805.83  41584282.5    10919978.17  280.09
+Grandes empresas 1457305.62  20568882.0  -957187.63   -65.68
+...
 
